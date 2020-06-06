@@ -14,6 +14,8 @@
 		1867C67D248B4A04002F1280 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1867C67C248B4A04002F1280 /* Assets.xcassets */; };
 		1867C680248B4A04002F1280 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1867C67E248B4A04002F1280 /* LaunchScreen.storyboard */; };
 		1867C683248B4A04002F1280 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1867C682248B4A04002F1280 /* main.m */; };
+		1867C68C248B4A4C002F1280 /* NSString+OUExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1867C68B248B4A4C002F1280 /* NSString+OUExtension.m */; };
+		7F2964703800A9084E7BADE6 /* Pods_OUKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7AFEB673D4A4E67379153F5 /* Pods_OUKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,12 @@
 		1867C67F248B4A04002F1280 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1867C681248B4A04002F1280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1867C682248B4A04002F1280 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1867C68A248B4A4C002F1280 /* NSString+OUExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+OUExtension.h"; sourceTree = "<group>"; };
+		1867C68B248B4A4C002F1280 /* NSString+OUExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+OUExtension.m"; sourceTree = "<group>"; };
+		1867C68D248B4B2F002F1280 /* OUExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OUExtension.h; sourceTree = "<group>"; };
+		39A13150E0E6C80C35C90E19 /* Pods-OUKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OUKit.release.xcconfig"; path = "Target Support Files/Pods-OUKit/Pods-OUKit.release.xcconfig"; sourceTree = "<group>"; };
+		AEDFB427E06F85E903C5E77C /* Pods-OUKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OUKit.debug.xcconfig"; path = "Target Support Files/Pods-OUKit/Pods-OUKit.debug.xcconfig"; sourceTree = "<group>"; };
+		C7AFEB673D4A4E67379153F5 /* Pods_OUKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OUKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F2964703800A9084E7BADE6 /* Pods_OUKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +56,8 @@
 			children = (
 				1867C66F248B4A00002F1280 /* OUKit */,
 				1867C66E248B4A00002F1280 /* Products */,
+				7E84CCAFBFF5CFBBD2D88401 /* Pods */,
+				6EC7346EB08C31C3753EEB12 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +72,7 @@
 		1867C66F248B4A00002F1280 /* OUKit */ = {
 			isa = PBXGroup;
 			children = (
+				1867C689248B4A32002F1280 /* OUExtension */,
 				1867C670248B4A00002F1280 /* AppDelegate.h */,
 				1867C671248B4A00002F1280 /* AppDelegate.m */,
 				1867C673248B4A00002F1280 /* SceneDelegate.h */,
@@ -76,6 +88,34 @@
 			path = OUKit;
 			sourceTree = "<group>";
 		};
+		1867C689248B4A32002F1280 /* OUExtension */ = {
+			isa = PBXGroup;
+			children = (
+				1867C68D248B4B2F002F1280 /* OUExtension.h */,
+				1867C68A248B4A4C002F1280 /* NSString+OUExtension.h */,
+				1867C68B248B4A4C002F1280 /* NSString+OUExtension.m */,
+			);
+			path = OUExtension;
+			sourceTree = "<group>";
+		};
+		6EC7346EB08C31C3753EEB12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7AFEB673D4A4E67379153F5 /* Pods_OUKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E84CCAFBFF5CFBBD2D88401 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AEDFB427E06F85E903C5E77C /* Pods-OUKit.debug.xcconfig */,
+				39A13150E0E6C80C35C90E19 /* Pods-OUKit.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +123,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1867C686248B4A04002F1280 /* Build configuration list for PBXNativeTarget "OUKit" */;
 			buildPhases = (
+				8A2AB1359CD02AD6E77ED06B /* [CP] Check Pods Manifest.lock */,
 				1867C669248B4A00002F1280 /* Sources */,
 				1867C66A248B4A00002F1280 /* Frameworks */,
 				1867C66B248B4A00002F1280 /* Resources */,
@@ -141,6 +182,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8A2AB1359CD02AD6E77ED06B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OUKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1867C669248B4A00002F1280 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -149,6 +215,7 @@
 				1867C678248B4A00002F1280 /* ViewController.m in Sources */,
 				1867C672248B4A00002F1280 /* AppDelegate.m in Sources */,
 				1867C683248B4A04002F1280 /* main.m in Sources */,
+				1867C68C248B4A4C002F1280 /* NSString+OUExtension.m in Sources */,
 				1867C675248B4A00002F1280 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +354,7 @@
 		};
 		1867C687248B4A04002F1280 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEDFB427E06F85E903C5E77C /* Pods-OUKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +371,7 @@
 		};
 		1867C688248B4A04002F1280 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39A13150E0E6C80C35C90E19 /* Pods-OUKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
