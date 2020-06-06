@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
   spec.name         = "OUKit"
 
 # 版本号，每次更新提交都要修改，不然会提交不成功
-  spec.version      = "1.0.2"
+  spec.version      = "1.0.3"
 
   spec.summary      = "这是我自己的Kit"
   spec.description  = <<-DESC
@@ -26,7 +26,7 @@ Pod::Spec.new do |spec|
 
   spec.author       = { "Allen" => "381087305@qq.com" }
 
-  spec.ios.deployment_target = "8.0"
+  spec.ios.deployment_target = "9.0"
 
 # 远程库的地址和对应的 tag，tag 要和 version 对应
   spec.source       = { :git => "https://github.com/bearInSouth/OUKit.git", :tag => spec.version.to_s }
