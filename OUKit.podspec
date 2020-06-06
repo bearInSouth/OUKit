@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "OUKit"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "这是我自己的Kit"
   spec.description  = <<-DESC
   我自己的 Kit，我自己做主。
