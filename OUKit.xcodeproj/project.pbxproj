@@ -69,7 +69,7 @@
 		1867C66F248B4A00002F1280 /* OUKit */ = {
 			isa = PBXGroup;
 			children = (
-				1867C689248B4A32002F1280 /* OUExtension */,
+				1867C68E248B865C002F1280 /* OUKit */,
 				1867C670248B4A00002F1280 /* AppDelegate.h */,
 				1867C671248B4A00002F1280 /* AppDelegate.m */,
 				1867C676248B4A00002F1280 /* ViewController.h */,
@@ -91,6 +91,14 @@
 				1867C68B248B4A4C002F1280 /* NSString+OUExtension.m */,
 			);
 			path = OUExtension;
+			sourceTree = "<group>";
+		};
+		1867C68E248B865C002F1280 /* OUKit */ = {
+			isa = PBXGroup;
+			children = (
+				1867C689248B4A32002F1280 /* OUExtension */,
+			);
+			path = OUKit;
 			sourceTree = "<group>";
 		};
 		6EC7346EB08C31C3753EEB12 /* Frameworks */ = {
