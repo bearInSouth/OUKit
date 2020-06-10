@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
   spec.name         = "OUKit"
 
 # 版本号，每次更新提交都要修改，不然会提交不成功
-  spec.version      = "1.0.3"
+  spec.version      = "1.0.4"
 
   spec.summary      = "这是我自己的Kit"
   spec.description  = <<-DESC
@@ -32,7 +32,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/bearInSouth/OUKit.git", :tag => spec.version.to_s }
 
 # 资源文件路径，通过这个找对应文件
-  spec.source_files  = "OUKit/**/*.{h,m}"
+  spec.source_files  = "OUKit/OUKit/**/*.{h,m}"
 
 # 是否支持 ARC
   spec.requires_arc = true
